@@ -1,7 +1,9 @@
 #!/usr/bin/env groovy
 
-def packageArtifact(){
+def call() {
     stage("Package artifact") {
         bat "mvn clean"
     }
 }
+
+
